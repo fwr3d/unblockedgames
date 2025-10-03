@@ -11,7 +11,7 @@ const games = [
     {
         title: "Retro Bowl",
         description: "Play retro bowl with your friends.",
-        icon: "images/retrobowl.png", // Image path
+        icon: "🏈", // Temporarily use emoji to test
         url: "https://fwr3d.github.io/retrobowl/",
         color: "#2c3e50" // Choose a hex color
     },
