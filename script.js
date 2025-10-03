@@ -11,7 +11,7 @@ const games = [
     {
         title: "Retro Bowl",
         description: "Play retro bowl with your friends.",
-        icon: "🏈", // Choose an emoji icon
+        icon: "images/football-player.png", // Image path
         url: "https://fwr3d.github.io/retrobowl/",
         color: "#2c3e50" // Choose a hex color
     },
@@ -75,7 +75,10 @@ function renderGames() {
     gamesGrid.innerHTML = filteredGames.map(game => `
         <div class="game-card">
             <div class="game-image" style="background: linear-gradient(45deg, ${game.color}, ${adjustColor(game.color, -20)})">
-                <span style="font-size: 3rem;">${game.icon}</span>
+                ${game.icon.startsWith('images/') ? 
+                    `<img src="${game.icon}" alt="${game.title}" style="width: 80px; height: 80px; object-fit: contain;">` : 
+                    `<span style="font-size: 3rem;">${game.icon}</span>`
+                }
             </div>
             <div class="game-info">
                 <h3 class="game-title">${game.title}</h3>
