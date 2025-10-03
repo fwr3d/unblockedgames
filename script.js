@@ -1,20 +1,19 @@
 // Game data with GitHub Pages links
 // Add your games here in the following format:
 const games = [
-    // Example game entry:
-    // {
-    //     title: "Game Name",
-    //     description: "Brief description of the game",
-    //     icon: "🎮", // Choose an emoji icon
-    //     url: "https://your-game-url.com",
-    //     color: "#ff6b6b" // Choose a hex color
-    // },
     {
         title: "Cookie Clicker",
         description: "Click on the cookie to earn cookies.",
         icon: "🍪", // Choose an emoji icon
         url: "https://fwr3d.github.io/cookieclicker/",
         color: "#ffd700" // Choose a hex color
+    },
+    {
+        title: "Retro Bowl",
+        description: "Play retro bowl with your friends.",
+        icon: "🏈", // Choose an emoji icon
+        url: "https://fwr3d.github.io/retrobowl/",
+        color: "#2c3e50" // Choose a hex color
     },
 ];
 
