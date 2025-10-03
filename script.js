@@ -32,11 +32,16 @@ function init() {
 
 // Render games based on current search
 function renderGames() {
+    console.log('Total games:', games.length);
+    console.log('Games:', games);
+    
     const filteredGames = games.filter(game => {
         const matchesSearch = game.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
                             game.description.toLowerCase().includes(currentSearch.toLowerCase());
         return matchesSearch;
     });
+    
+    console.log('Filtered games:', filteredGames.length);
 
     if (filteredGames.length === 0) {
         if (games.length === 0) {
@@ -76,7 +81,8 @@ function renderGames() {
         <div class="game-card">
             <div class="game-image" style="background: linear-gradient(45deg, ${game.color}, ${adjustColor(game.color, -20)})">
                 ${game.icon.startsWith('images/') ? 
-                    `<img src="${game.icon}" alt="${game.title}" style="width: 80px; height: 80px; object-fit: contain;">` : 
+                    `<img src="${game.icon}" alt="${game.title}" style="width: 80px; height: 80px; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                     <span style="font-size: 3rem; display: none;">🎮</span>` : 
                     `<span style="font-size: 3rem;">${game.icon}</span>`
                 }
             </div>
