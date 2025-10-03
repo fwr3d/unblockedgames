@@ -4,14 +4,14 @@ const games = [
     {
         title: "Cookie Clicker",
         description: "Click on the cookie to earn cookies.",
-        icon: "🍪", // Choose an emoji icon
+        icon: "images/cookieclicker.png", // Image path
         url: "https://fwr3d.github.io/cookieclicker/",
         color: "#ffd700" // Choose a hex color
     },
     {
         title: "Retro Bowl",
         description: "Play retro bowl with your friends.",
-        icon: "images/football-player.png", // Image path
+        icon: "images/retrobowl.png", // Image path
         url: "https://fwr3d.github.io/retrobowl/",
         color: "#2c3e50" // Choose a hex color
     },
